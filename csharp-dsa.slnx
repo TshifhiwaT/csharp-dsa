@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="csharp-dsa.tests/csharp-dsa.tests.csproj" />
+  <Project Path="csharp-dsa/csharp-dsa.csproj" />
+</Solution>
