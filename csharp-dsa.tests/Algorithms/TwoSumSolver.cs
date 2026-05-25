@@ -56,7 +56,15 @@ namespace csharp_dsa.tests.Algorithms
             for (int i = 0; i < nums.Length; i++)
             {
                 int complement = target - nums[i];
+
+                if(map.TryGetValue(complement, out int index))
+                {
+                    return [index, i];
+                }
+
+                map[nums[i]] = i;
             }
+            return [];
         }
 
 
